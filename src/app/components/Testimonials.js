@@ -42,8 +42,8 @@ const testimonials = [
           </div>
           <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
             <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-              {testimonials.map((testimonial) => (
-                <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+              {testimonials.map((testimonial, i) => (
+                <div key={testimonial.author.handle + i} className="pt-8 sm:inline-block sm:w-full sm:px-4">
                   <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
                     <blockquote className="text-gray-900">
                       <p>{`“${testimonial.body}”`}</p>
